@@ -1,5 +1,5 @@
 ﻿Storage_Manage
-1.0.0.0
+
 
 winexe
 C#
@@ -8,13 +8,13 @@ E:\DoAn.Net\src\Storage_Manage\Storage_Manage\obj\Debug\net8.0-windows\
 Storage_Manage
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\DoAn.Net\src\Storage_Manage\Storage_Manage\App.xaml
 3-98200120
 
-8741013342
+62064219334
 1981839832580
 MainWindow.xaml;Views\NhapHoaDon.xaml;Views\TaoHoaDonBan.xaml;
 
-True
+False
 
