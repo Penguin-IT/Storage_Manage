@@ -8,5 +8,11 @@
     <Compile Update="Views\TaoHoaDonBan.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ThongKeDoanhThuUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Tìm kiếmUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
