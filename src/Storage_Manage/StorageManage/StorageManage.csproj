@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +57,54 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\ChiTietPN.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietPX.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DaiLy.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoaiSanPham.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhaCungCap.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhanVien.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhomQuyen.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhieuNhap.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhieuXuat.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLKhoModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLKhoModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLKhoModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLKhoModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLKhoModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SanPham.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaiKhoan.cs">
+      <DependentUpon>QLKhoModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ThongKe.cs" />
     <Compile Include="ViewModels\Timkiem.cs" />
@@ -117,6 +167,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="Models\QLKhoModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLKhoModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\QLKhoModel.edmx.diagram">
+      <DependentUpon>QLKhoModel.edmx</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,8 +182,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Content Include="Models\QLKhoModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLKhoModel.edmx</DependentUpon>
+      <LastGenOutput>QLKhoModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QLKhoModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLKhoModel.edmx</DependentUpon>
+      <LastGenOutput>QLKhoModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
