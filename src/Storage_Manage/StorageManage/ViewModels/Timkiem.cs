@@ -15,7 +15,7 @@ namespace Storage_Manage.ViewModels
         public string SearchText
         {
             get => _searchText;
-            set { _searchText = value; OnPropertyChanged(); }
+            set { _searchText = value; OnPropertyChanged("SearchText"); }
         }
 
         // Danh sách kết quả tìm kiếm (Ví dụ là Sản phẩm)
@@ -23,7 +23,7 @@ namespace Storage_Manage.ViewModels
         public ObservableCollection<object> SearchResult
         {
             get => _searchResult;
-            set { _searchResult = value; OnPropertyChanged(); }
+            set { _searchResult = value; OnPropertyChanged("SearchResult"); }
         }
 
         public ICommand SearchCommand { get; set; }

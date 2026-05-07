@@ -30,5 +30,6 @@ namespace StorageManage.Models
         public virtual ICollection<ChiTietPN> ChiTietPNs { get; set; }
         public virtual NhaCungCap NhaCungCap { get; set; }
         public virtual NhanVien NhanVien { get; set; }
+        
     }
 }

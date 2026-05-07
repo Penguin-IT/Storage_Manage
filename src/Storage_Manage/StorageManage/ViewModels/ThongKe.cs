@@ -14,14 +14,14 @@ namespace Storage_Manage.ViewModels
         public DateTime FromDate
         {
             get => _fromDate;
-            set { _fromDate = value; OnPropertyChanged(); }
+            set { _fromDate = value; OnPropertyChanged("FromDate"); }
         }
 
         private double _totalRevenue;
         public double TotalRevenue
         {
             get => _totalRevenue;
-            set { _totalRevenue = value; OnPropertyChanged(); }
+            set { _totalRevenue = value; OnPropertyChanged("ToTalRevenue"); }
         }
 
         public ICommand StatisticCommand { get; set; }
