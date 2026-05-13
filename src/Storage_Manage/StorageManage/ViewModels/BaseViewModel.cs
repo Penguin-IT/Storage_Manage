@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Storage_Manage.ViewModels
+namespace StorageManage.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

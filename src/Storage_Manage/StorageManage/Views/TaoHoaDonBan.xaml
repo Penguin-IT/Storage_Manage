@@ -25,11 +25,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-
             <TextBlock Grid.Column="0" Text="Tạo Hóa Đơn Bán" FontSize="40" FontWeight="Bold" Margin="20,15,0,15" VerticalAlignment="Center"/>
-
             <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
-                <TextBlock Text="{Binding MaPhieu,StringFormat='Mã phiếu: {0}'}" FontSize="16" Foreground="#666" FontStyle="Italic" HorizontalAlignment="Right"/>
+                <TextBlock Text="{Binding MaPhieu, StringFormat='Mã phiếu: {0}'}" FontSize="16" Foreground="#666" FontStyle="Italic" HorizontalAlignment="Right"/>
                 <TextBlock Text="Người lập: Nguyễn Hữu Nhật (NV01)" FontSize="18" Foreground="#107C41" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,5,0,0"/>
             </StackPanel>
         </Grid>
@@ -43,19 +41,15 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
             <TextBlock Grid.Row="0" Grid.Column="0" Text="Đại Lý" FontSize="23" FontWeight="Bold"/>
             <Border Grid.Row="1" Grid.Column="0" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="35" Width="450" Margin="0,10,0,10">
-                <TextBox Text="{Binding MaDL,UpdateSourceTrigger=PropertyChanged}"  BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15"/>
+                <TextBox Text="{Binding MaDL, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15"/>
             </Border>
-
             <TextBlock Grid.Row="0" Grid.Column="1" Text="Ngày bán" FontSize="23" FontWeight="Bold" Margin="25,0,-12,55" Grid.RowSpan="2"/>
             <Border Grid.Row="1" Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="35" Width="300" Margin="10,12,204,8">
-                <DatePicker SelectedDate="{Binding NgayXuat}" BorderThickness="0" 
-                            Background="Transparent" 
-                            VerticalContentAlignment="Center"
-                            Padding="5,0,0,0"
-                            xml:lang="vi-VN"/>
+                <DatePicker SelectedDate="{Binding NgayXuat}" BorderThickness="0"
+                            Background="Transparent" VerticalContentAlignment="Center"
+                            Padding="5,0,0,0" xml:lang="vi-VN"/>
             </Border>
         </Grid>
 
@@ -78,36 +72,44 @@
                 <TextBlock Grid.Row="0" Grid.Column="2" Text="Đơn giá bán" FontSize="18" FontWeight="Bold" Margin="0,0,10,5"/>
                 <TextBlock Grid.Row="0" Grid.Column="3" Text="Số lượng" FontSize="18" FontWeight="Bold" Margin="0,0,10,5"/>
 
-                <Border Grid.Row="1" Grid.Column="0" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="40" Background="White" Margin="0,0,10,0">
-                    <TextBox Text="{Binding MaSP,UpdateSourceTrigger=LostFocus}" BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15"
-                    />
+                
+                <Border Grid.Row="1" Grid.Column="0" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="40" Background="#EAEAEA" Margin="0,0,10,0">
+                    <TextBox Text="{Binding MaSP,UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent"
+                             Padding="10,0" VerticalContentAlignment="Center" FontSize="15"
+                              Foreground="#555"/>
                 </Border>
 
-                <Border Grid.Row="1" Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="40" Background="#EAEAEA" Margin="0,0,10,0">
-                    <TextBox Text="{Binding TenSanPham}" BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15" 
-                             IsReadOnly="True" Foreground="#555" 
-                             />
+                
+                <Border Grid.Row="1" Grid.Column="1" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="40" Background="White" Margin="0,0,10,0">
+                    <ComboBox ItemsSource="{Binding DanhSachSP}"
+                              SelectedItem="{Binding SelectedSanPham, Mode=TwoWay}"
+                              DisplayMemberPath="TenSP"
+                              BorderThickness="0" Background="Transparent"
+                              VerticalContentAlignment="Center"
+                              FontSize="15" Padding="8,0,0,0"/>
                 </Border>
 
                 <Border Grid.Row="1" Grid.Column="2" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="40" Background="White" Margin="0,0,10,0">
-                    <TextBox Text="{Binding DonGiaXuat,UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15"
-                            />
+                    <TextBox Text="{Binding DonGiaXuat, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15"/>
                 </Border>
 
                 <Border Grid.Row="1" Grid.Column="3" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="40" Background="White" Margin="0,0,20,0">
-                    <TextBox Text="{Binding SoLuong,UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15"
-                             />
+                    <TextBox Text="{Binding SoLuong, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" Padding="10,0" VerticalContentAlignment="Center" FontSize="15"/>
                 </Border>
 
                 <Border Grid.Column="4" Grid.Row="1" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="45" Width="220" Background="#005A9E" HorizontalAlignment="Right">
-                    <Button Command="{Binding AddDetailCommand}" BorderThickness="0" Background="Transparent" Padding="10,0" Content="+ Thêm vào hóa đơn" Foreground="White" FontSize="20" Cursor="Hand"
-                            />
+                    <Button Command="{Binding AddDetailCommand}" BorderThickness="0" Background="Transparent" Padding="10,0" Content="+ Thêm vào hóa đơn" Foreground="White" FontSize="20" Cursor="Hand"/>
                 </Border>
             </Grid>
         </Border>
 
         <Border Grid.Row="3" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Margin="15,0,15,10" Background="LightGray">
-            <DataGrid ItemsSource="{Binding DSCTSP}" SelectedItem="{Binding SelectedCTSP,Mode=TwoWay}"  AutoGenerateColumns="False" CanUserAddRows="False" RowHeight="40" ColumnHeaderHeight="45" Background="Transparent" RowBackground="White" AlternatingRowBackground="#F2F4F8" HorizontalGridLinesBrush="#E5E5E5" VerticalGridLinesBrush="#E5E5E5">
+            <DataGrid ItemsSource="{Binding DSCTSP}" SelectedItem="{Binding SelectedCTSP, Mode=TwoWay}"
+                      AutoGenerateColumns="False" CanUserAddRows="False"
+                      RowHeight="40" ColumnHeaderHeight="45"
+                      Background="Transparent" RowBackground="White"
+                      AlternatingRowBackground="#F2F4F8"
+                      HorizontalGridLinesBrush="#E5E5E5" VerticalGridLinesBrush="#E5E5E5">
                 <DataGrid.ColumnHeaderStyle>
                     <Style TargetType="DataGridColumnHeader">
                         <Setter Property="FontSize" Value="14"/>
@@ -117,21 +119,27 @@
                     </Style>
                 </DataGrid.ColumnHeaderStyle>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="STT" Width="120" Binding="{Binding STT}" />
+                    <DataGridTextColumn Header="STT" Width="120" Binding="{Binding STT}"/>
                     <DataGridTextColumn Header="Mã SP" Width="120" Binding="{Binding MaSP}"/>
                     <DataGridTextColumn Header="Tên Sản Phẩm" Width="*" Binding="{Binding TenSP}"/>
                     <DataGridTextColumn Header="Số Lượng" Width="100" Binding="{Binding SoLuong}"/>
-                    <DataGridTextColumn Header="Đơn Giá" Width="150" Binding="{Binding DonGiaXuat,StringFormat='{}{0:N0} đ'}"/>
-                    <DataGridTextColumn Header="Thành Tiền" Width="150" Binding="{Binding ThanhTien,StringFormat='{}{0:N0} đ'}"/>
+                    <DataGridTextColumn Header="Đơn Giá" Width="150" Binding="{Binding DonGiaXuat, StringFormat='{}{0:N0} đ'}"/>
+                    <DataGridTextColumn Header="Thành Tiền" Width="150" Binding="{Binding ThanhTien, StringFormat='{}{0:N0} đ'}"/>
                     <DataGridTemplateColumn Header="Thao Tác" Width="100">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <Button Command="{Binding DataContext.EditDetailCommand,RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}" Background="Transparent" BorderThickness="0" Margin="0,0,15,0" ToolTip="Sửa" Cursor="Hand">
-                                        <Path Data="M3,17.25V21h3.75L17.81,9.94l-3.75-3.75L3,17.25z M20.71,7.04c0.39-0.39,0.39-1.02,0-1.41l-2.34-2.34c-0.39-0.39-1.02-0.39-1.41,0l-1.83,1.83l3.75,3.75L20.71,7.04z" Fill="#555" Width="14" Height="14" Stretch="Fill"/>
+                                    <Button Command="{Binding DataContext.EditDetailCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                            CommandParameter="{Binding}"
+                                            Background="Transparent" BorderThickness="0" Margin="0,0,15,0" ToolTip="Sửa" Cursor="Hand">
+                                        <Path Data="M3,17.25V21h3.75L17.81,9.94l-3.75-3.75L3,17.25z M20.71,7.04c0.39-0.39,0.39-1.02,0-1.41l-2.34-2.34c-0.39-0.39-1.02-0.39-1.41,0l-1.83,1.83l3.75,3.75L20.71,7.04z"
+                                              Fill="#107C41" Width="14" Height="14" Stretch="Fill"/>
                                     </Button>
-                                    <Button Command="{Binding DataContext.DeleteDetailCommand,RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}" Background="Transparent" BorderThickness="0" ToolTip="Xóa" Cursor="Hand">
-                                        <Path Data="M6,19c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2V7H6V19z M19,4h-3.5l-1-1h-5l-1,1H5v2h14V4z" Fill="#555" Width="14" Height="14" Stretch="Fill"/>
+                                    <Button Command="{Binding DataContext.DeleteDetailCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                            CommandParameter="{Binding}"
+                                            Background="Transparent" BorderThickness="0" ToolTip="Xóa" Cursor="Hand">
+                                        <Path Data="M6,19c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2V7H6V19z M19,4h-3.5l-1-1h-5l-1,1H5v2h14V4z"
+                                              Fill="#C00000" Width="14" Height="14" Stretch="Fill"/>
                                     </Button>
                                 </StackPanel>
                             </DataTemplate>
@@ -148,7 +156,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="0" Text="Tổng thanh toán:" FontSize="30" FontWeight="Bold" Foreground="DarkRed" VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="1" Text="{Binding TongTien,StringFormat='{}{0:N0} đ'}" FontSize="30" FontWeight="Bold" Foreground="DarkRed" Margin="15,0,0,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Text="{Binding TongTien, StringFormat='{}{0:N0} đ'}" FontSize="30" FontWeight="Bold" Foreground="DarkRed" Margin="15,0,0,0" VerticalAlignment="Center"/>
             <Border Grid.Column="2" CornerRadius="5" BorderThickness="1" BorderBrush="#A0A0A0" Height="45" Width="200" Background="#005A9E" HorizontalAlignment="Right">
                 <Button Command="{Binding SaveInvoiceCommand}" BorderThickness="0" Background="Transparent" Padding="10,0" Content="📄 Lưu Phiếu Xuất" Foreground="White" FontSize="20" FontWeight="SemiBold" Cursor="Hand"/>
             </Border>

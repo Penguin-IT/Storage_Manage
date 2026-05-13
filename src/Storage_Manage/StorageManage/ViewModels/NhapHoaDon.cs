@@ -1,4 +1,4 @@
-﻿using Storage_Manage.ViewModels;
+﻿using StorageManage.ViewModels;
 using StorageManage.Models;
 using System;
 using System.Collections.ObjectModel;
@@ -22,6 +22,36 @@ namespace StorageManage.ViewModels
     public class NhapHoaDon : BaseViewModel
     {
         private QLKEntities db = new QLKEntities();
+
+        private ObservableCollection<SanPham> _danhSachSP;
+
+        public ObservableCollection<SanPham> DanhSachSP
+        {
+            get { return _danhSachSP; }
+            set { _danhSachSP = value; OnPropertyChanged("DanhSachSP"); }
+        }
+        private SanPham _selectedSanPham;
+        public SanPham SelectedSanPham
+        {
+            get { return _selectedSanPham; }
+            set
+            {
+                _selectedSanPham = value;
+                OnPropertyChanged("SelectedSanPham");
+
+
+                if (value != null)
+                {
+                    MaSP = value.MaSP;
+                    DonGiaNhap = value.DonGia.HasValue ? (decimal)value.DonGia.Value : 0m;
+                }
+                else
+                {
+                    MaSP = string.Empty;
+                    DonGiaNhap = 0m;
+                }
+            }
+        }
 
         private ObservableCollection<ChiTietPNView> _dsCTSP;
         public ObservableCollection<ChiTietPNView> DsCTSP
@@ -67,6 +97,10 @@ namespace StorageManage.ViewModels
                     {
                         TenSanPham = sp.TenSP;
                         DonGiaNhap = sp.DonGia.HasValue ? sp.DonGia.Value : 0m;
+                        if (_selectedSanPham==null || _selectedSanPham.MaSP != sp.MaSP)
+                        {
+                            SelectedSanPham = sp;
+                        }
                     }
                     else
                     {
@@ -133,7 +167,7 @@ namespace StorageManage.ViewModels
             NgayNhap = DateTime.Today;
             DsCTSP = new ObservableCollection<ChiTietPNView>();
             MaPhieu = GenerateReceiptCode();
-
+            DanhSachSP = new ObservableCollection<SanPham>(db.SanPhams.ToList());
             AddDetailCommand    = new RelayCommand(p => AddDetail());
             SaveInvoiceCommand  = new RelayCommand(p => SaveInvoice());
            
@@ -267,12 +301,12 @@ namespace StorageManage.ViewModels
             }
 
             
-            SelectedCTSP.MaSP              = this.MaSP;
-            SelectedCTSP.TenSP             = this.TenSanPham;
-            SelectedCTSP.SoLuong           = this.SoLuong;
-            SelectedCTSP.DonGiaNhap        = this.DonGiaNhap;
-            SelectedCTSP.ChiTiet.MaSP      = this.MaSP;
-            SelectedCTSP.ChiTiet.SoLuong   = this.SoLuong;
+            SelectedCTSP.MaSP= this.MaSP;
+            SelectedCTSP.TenSP= SelectedSanPham.TenSP;
+            SelectedCTSP.SoLuong = this.SoLuong;
+            SelectedCTSP.DonGiaNhap = this.DonGiaNhap;
+            SelectedCTSP.ChiTiet.MaSP = this.MaSP;
+            SelectedCTSP.ChiTiet.SoLuong= this.SoLuong;
             SelectedCTSP.ChiTiet.DonGiaNhap = this.DonGiaNhap;
             SelectedCTSP.ChiTiet.TinhThanhTien();
             SelectedCTSP.ThanhTien = SelectedCTSP.ChiTiet.ThanhTien;
@@ -326,6 +360,7 @@ namespace StorageManage.ViewModels
         // Hàm xóa trắng form nhập liệu
         private void ClearForm()
         {
+            SelectedSanPham = null;
             MaSP       = string.Empty;
             TenSanPham = string.Empty;
             SoLuong    = 0;
