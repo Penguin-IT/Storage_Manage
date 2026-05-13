@@ -120,6 +120,7 @@
     <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\ThongKe.cs" />
     <Compile Include="ViewModels\Timkiem.cs" />
+    <Compile Include="ViewModels\XuatHoaDon.cs" />
     <Compile Include="Views\NhapHoaDon.xaml.cs">
       <DependentUpon>NhapHoaDon.xaml</DependentUpon>
     </Compile>

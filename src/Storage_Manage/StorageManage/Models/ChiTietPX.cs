@@ -22,5 +22,9 @@ namespace StorageManage.Models
     
         public virtual PhieuXuat PhieuXuat { get; set; }
         public virtual SanPham SanPham { get; set; }
+        public void TinhThanhTien()
+        {
+            ThanhTien = SoLuong * DonGiaNhap;
+        }
     }
 }
