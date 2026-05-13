@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Storage_Manage.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Storage_Manage.Views
         public ThongKeDoanhThuUC()
         {
             InitializeComponent();
+            this.DataContext = new StatisticViewModel();
         }
     }
 }

@@ -16,13 +16,15 @@ using System.Windows.Shapes;
 
 namespace Storage_Manage.Views
 {
+    /// <summary>
+    /// Interaction logic for Tìm_kiếmUC.xaml
+    /// </summary>
     public partial class TimKiemUC : UserControl
     {
         public TimKiemUC()
         {
             InitializeComponent();
-
-            // Gán DataContext trực tiếp tại đây để fix lỗi XDG-0001
+         
             this.DataContext = new SearchViewModel();
         }
     }
