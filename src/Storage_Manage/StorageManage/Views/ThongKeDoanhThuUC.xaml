@@ -11,28 +11,48 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
-            <!-- Phần tổng cộng đã chỉnh size -->
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
             <TextBlock Text="Từ ngày:" VerticalAlignment="Center" Margin="5" FontSize="20"/>
-            <DatePicker Margin="5" FontSize="20"/>
+            <!-- 1. Binding SelectedDate vào FromDate -->
+            <DatePicker Margin="5" FontSize="20" 
+                        SelectedDate="{Binding FromDate, UpdateSourceTrigger=PropertyChanged}"/>
+
+     
             <TextBlock Text="Đến ngày:" VerticalAlignment="Center" Margin="5" FontSize="20"/>
-            <DatePicker Margin="5" FontSize="20"/>
-            <Button Content="Thống kê" Width="100" Margin="5" Background="LightGreen" FontSize="20"/>
+            <DatePicker Margin="5" FontSize="20" SelectedDate="{Binding Path=DisplayDate, RelativeSource={RelativeSource Self}}"/>
+
+            <!-- 2. Binding Command cho nút Thống kê -->
+            <Button Content="Thống kê" Width="120" Margin="5" 
+                    Background="LightGreen" FontSize="20"
+                    Command="{Binding StatisticCommand}"/>
         </StackPanel>
 
-        <DataGrid Grid.Row="1" AutoGenerateColumns="True" Name="dgStatistic">
-            <!-- Sau này sẽ hiển thị danh sách doanh thu -->
+        <!-- 3. Binding ItemsSource và định nghĩa cột -->
+        <DataGrid Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" 
+                  Name="dgStatistic" ItemsSource="{Binding OutputList}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã Phiếu Xuất" Binding="{Binding MaPX}" Width="*"/>
+                <DataGridTextColumn Header="Ngày Xuất" Binding="{Binding NgayXuat, StringFormat=\{0:dd/MM/yyyy\}}" Width="*"/>
+                <DataGridTextColumn Header="Mã Đại Lý/Khách" Binding="{Binding MaDL}" Width="*"/>
+                <DataGridTextColumn Header="Tổng Tiền" Binding="{Binding TongTien, StringFormat='{}{0:N0}'}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                            <Setter Property="Margin" Value="0,0,5,0" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
         </DataGrid>
 
-       
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
             <TextBlock Text="Tổng doanh thu: " FontSize="20" FontWeight="Bold"/>
             <TextBlock Text="{Binding TotalRevenue, StringFormat='{}{0:N0} VNĐ'}" 
-           FontSize="20" 
-           Foreground="Red" 
-           FontWeight="Bold"/>
+                       FontSize="25" 
+                       Foreground="Red" 
+                       FontWeight="Bold"/>
         </StackPanel>
     </Grid>
 </UserControl>
