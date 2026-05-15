@@ -3,49 +3,71 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Storage_Manage.Views"
              xmlns:vm="clr-namespace:StorageManage.ViewModels"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-
+             mc:Ignorable="d" d:DesignHeight="600" d:DesignWidth="1000">
 
     <UserControl.DataContext>
         <vm:SearchViewModel/>
     </UserControl.DataContext>
-    <Grid Background="White" Margin="10">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </UserControl.Resources>
+
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
-            <TextBlock Text="Tìm kiếm:" VerticalAlignment="Center" Margin="5" FontSize="20"/>
+        <GroupBox Header="Tìm Kiếm Hoá Đơn" Margin="10" Padding="10">
+            <WrapPanel Orientation="Horizontal">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Tiêu chí:"/>
+                    <ComboBox Width="150" ItemsSource="{Binding SearchCriteria}" 
+                              SelectedItem="{Binding SelectedCriteria}"/>
+                </StackPanel>
 
-            
-            <TextBox Width="200" Margin="5" Name="txtSearch" 
-                     Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"/>
+                <StackPanel Margin="5">
+                    <StackPanel.Style>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsTimeSearchSelected}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+                    <TextBlock Text="Từ khóa:"/>
+                    <TextBox Width="200" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
 
-            <TextBlock Text="Tiêu chí:" VerticalAlignment="Center" Margin="5" FontSize="20"/>
-            <ComboBox Width="120" Margin="5" SelectedIndex="0">
-                <ComboBoxItem Content="Theo tên"/>
-                <ComboBoxItem Content="Theo mã"/>
-            </ComboBox>
+                <StackPanel Orientation="Horizontal" 
+                            Visibility="{Binding IsTimeSearchSelected, Converter={StaticResource BoolToVis}}">
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Từ ngày:"/>
+                        <DatePicker SelectedDate="{Binding FromDate}"/>
+                    </StackPanel>
 
-           
-            <Button Content="Tìm kiếm" Width="100" Margin="5" 
-                    Background="SkyBlue" FontSize="20"
-                    Command="{Binding SearchCommand}"/>
-        </StackPanel>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Đến ngày:"/>
+                        <DatePicker SelectedDate="{Binding ToDate}"/>
+                    </StackPanel>
+                </StackPanel>
 
-        
-        <DataGrid Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" 
-                  Name="dgSearchResult" ItemsSource="{Binding SearchResult}">
+                <Button Content="Tìm kiếm" Width="100" Height="35" Margin="5,15,0,0"
+                        Background="SkyBlue" Command="{Binding SearchCommand}"/>
+            </WrapPanel>
+        </GroupBox>
+
+        <DataGrid Grid.Row="1" Margin="10" AutoGenerateColumns="False" 
+                  ItemsSource="{Binding OutputList}" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã Sản Phẩm" Binding="{Binding MaSP}" Width="*"/>
-                <DataGridTextColumn Header="Tên Sản Phẩm" Binding="{Binding TenSP}" Width="2*"/>
-                <DataGridTextColumn Header="Đơn Vị Tính" Binding="{Binding DVT}" Width="*"/>
-                <DataGridTextColumn Header="Số Lượng Tồn" Binding="{Binding SLTon}" Width="*"/>
-                <DataGridTextColumn Header="Đơn Giá" Binding="{Binding DonGia}" Width="*"/>
+                <DataGridTextColumn Header="Mã Phiếu" Binding="{Binding MaPN}" Width="100"/>
+                <DataGridTextColumn Header="Ngày Nhập" Binding="{Binding NgayNhap, StringFormat=\{0:dd/MM/yyyy\}}" Width="150"/>
+                <DataGridTextColumn Header="Nhà Cung Cấp" Binding="{Binding NhaCungCap.TenNCC}" Width="*"/>
+                <DataGridTextColumn Header="Nhân Viên Lập" Binding="{Binding NhanVien.HoTen}" Width="*"/>
+                <DataGridTextColumn Header="Tổng Tiền" Binding="{Binding TongTien, StringFormat='{}{0:N0} VNĐ'}" Width="150"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

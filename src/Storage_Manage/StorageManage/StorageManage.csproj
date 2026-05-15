@@ -127,6 +127,12 @@
     <Compile Include="Views\TaoHoaDonBan.xaml.cs">
       <DependentUpon>TaoHoaDonBan.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ThemDanhMuc.xaml.cs">
+      <DependentUpon>ThemDanhMuc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThemSanPham.xaml.cs">
+      <DependentUpon>ThemSanPham.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ThongKeDoanhThuUC.xaml.cs">
       <DependentUpon>ThongKeDoanhThuUC.xaml</DependentUpon>
     </Compile>
@@ -152,6 +158,14 @@
     <Page Include="Views\TaoHoaDonBan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ThemDanhMuc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ThemSanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ThongKeDoanhThuUC.xaml">
       <Generator>MSBuild:Compile</Generator>

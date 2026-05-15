@@ -8,53 +8,89 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Data.Entity;
 
 namespace StorageManage.ViewModels
 {
     public class SearchViewModel : BaseViewModel
     {
+        private ObservableCollection<PhieuNhap> _outputList;
+        public ObservableCollection<PhieuNhap> OutputList
+        {
+            get => _outputList;
+            set { _outputList = value; OnPropertyChanged(nameof(OutputList)); }
+        }
 
         private string _searchText;
         public string SearchText
         {
             get => _searchText;
-            set { _searchText = value; OnPropertyChanged("SearchText"); }
+            set { _searchText = value; OnPropertyChanged(nameof(SearchText)); }
         }
 
-        // Danh sách kết quả tìm kiếm (Ví dụ là Sản phẩm)
-        private ObservableCollection<SanPham> _searchResult;
-        public ObservableCollection<SanPham> SearchResult
+        public ObservableCollection<string> SearchCriteria { get; set; }
+
+        private string _selectedCriteria;
+        public string SelectedCriteria
         {
-            get => _searchResult;
-            set { _searchResult = value; OnPropertyChanged("SearchResult"); }
+            get => _selectedCriteria;
+            set
+            {
+                _selectedCriteria = value;
+              
+                OnPropertyChanged(nameof(IsTimeSearchSelected));
+            }
         }
+
+      
+        public bool IsTimeSearchSelected => SelectedCriteria == "Khoảng thời gian";
+
+        private DateTime _fromDate = DateTime.Now.AddMonths(-1);
+        public DateTime FromDate { get => _fromDate; set { _fromDate = value; OnPropertyChanged(nameof(IsTimeSearchSelected)); } }
+
+        private DateTime _toDate = DateTime.Now;
+        public DateTime ToDate { get => _toDate; set { _toDate = value; OnPropertyChanged(nameof(ToDate)); } }
 
         public ICommand SearchCommand { get; set; }
 
         public SearchViewModel()
         {
-            SearchResult = new ObservableCollection<SanPham>();
+            OutputList = new ObservableCollection<PhieuNhap>();
+            SearchCriteria = new ObservableCollection<string> { "Khoảng thời gian", "Mã phiếu", "Nhân viên", "NCC" };
+            SelectedCriteria = "Mã phiếu";
 
-
-            SearchCommand = new RelayCommand((p) => ExecuteSearch());
+            SearchCommand = new RelayCommand(_ => { ExecuteSearch(); });
         }
 
         void ExecuteSearch()
         {
-
             using (var db = new QLKEntities())
             {
+                var query = db.PhieuNhaps
+                    .Include(x => x.NhaCungCap)
+                    .Include(x => x.NhanVien)
+                    .AsQueryable();
 
-                if (string.IsNullOrEmpty(SearchText))
+                switch (SelectedCriteria)
                 {
-                    var all = db.SanPhams.ToList();
-                    SearchResult = new ObservableCollection<SanPham>(all);
-                    return;
+                    case "Khoảng thời gian":
+                        query = query.Where(x => x.NgayNhap >= FromDate && x.NgayNhap <= ToDate);
+                        break;
+                    case "Mã phiếu":
+                        if (!string.IsNullOrEmpty(SearchText))
+                            query = query.Where(x => x.MaPN.Contains(SearchText));
+                        break;
+                    case "Nhân viên":
+                        if (!string.IsNullOrEmpty(SearchText))
+                            query = query.Where(x => x.NhanVien.HoTen.Contains(SearchText));
+                        break;
+                    case "NCC":
+                        if (!string.IsNullOrEmpty(SearchText))
+                            query = query.Where(x => x.NhaCungCap.TenNCC.Contains(SearchText));
+                        break;
                 }
-                var res = db.SanPhams.Where(x => x.MaSP.Contains(SearchText) ||
-                                         x.TenSP.Contains(SearchText)).ToList();
 
-                SearchResult = new ObservableCollection<SanPham>(res);
+                OutputList = new ObservableCollection<PhieuNhap>(query.ToList());
             }
         }
     }

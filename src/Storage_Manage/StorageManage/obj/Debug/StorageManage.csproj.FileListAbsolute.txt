@@ -28,3 +28,7 @@ E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\StorageMan
 E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\StorageM.A6AAF962.Up2Date
 E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\StorageManage.exe
 E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\StorageManage.pdb
+E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\Views\ThemDanhMuc.g.cs
+E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\Views\ThemSanPham.g.cs
+E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\Views\ThemDanhMuc.baml
+E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\Views\ThemSanPham.baml

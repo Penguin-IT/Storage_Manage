@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\App.xaml
-5-1599752096
+7-993152796
 2-1887771329
-29-1277498819
+311717660361
 181459181271
-MainWindow.xaml;Views\NhapHoaDon.xaml;Views\TaoHoaDonBan.xaml;Views\ThongKeDoanhThuUC.xaml;Views\TimKiemUC.xaml;
+MainWindow.xaml;Views\NhapHoaDon.xaml;Views\TaoHoaDonBan.xaml;Views\ThemDanhMuc.xaml;Views\ThemSanPham.xaml;Views\ThongKeDoanhThuUC.xaml;Views\TimKiemUC.xaml;
 
 False
 
