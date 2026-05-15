@@ -31,7 +31,7 @@ namespace StorageManage.ViewModels
             set { _danhSachSP = value; OnPropertyChanged("DanhSachSP"); }
         }
 
-        // Sản phẩm đang được chọn trên ComboBox
+        
         private SanPham _selectedSanPham;
         public SanPham SelectedSanPham
         {
