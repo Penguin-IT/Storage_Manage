@@ -1,17 +1,48 @@
-﻿using System;
+﻿using StorageManage.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using System.Windows;
+using System.Windows.Input;
 
 namespace StorageManage.ViewModels
 {
     public class TaoMoiDanhMuc : BaseViewModel
     {
-        public string TenDanhMuc { get; set; }
-        public string MoTa { get; set; }
+        private string _maLoai;
+        public string MaLoai
+        {
+            get => _maLoai;
+            set
+            {
+                _maLoai = value;
+                OnPropertyChanged(nameof(MaLoai));
+            }
+        }
+
+        private string _tenDanhMuc;
+        public string TenDanhMuc
+        {
+            get => _tenDanhMuc;
+            set
+            {
+                _tenDanhMuc = value;
+                OnPropertyChanged(nameof(TenDanhMuc)); 
+            }
+        }
+
+        private string _moTa;
+        public string MoTa
+        {
+            get => _moTa;
+            set
+            {
+                _moTa = value;
+                OnPropertyChanged(nameof(MoTa));
+            }
+        }
 
         public ICommand SaveCommand { get; set; }
 
@@ -22,23 +53,35 @@ namespace StorageManage.ViewModels
 
         void Save()
         {
-            if (string.IsNullOrWhiteSpace(TenDanhMuc))
+            if (string.IsNullOrWhiteSpace(MaLoai) ||
+                string.IsNullOrWhiteSpace(TenDanhMuc))
             {
-                MessageBox.Show("Không được để trống!");
+                MessageBox.Show("Không được để trống Mã loại hoặc Tên danh mục!");
                 return;
             }
 
-            using (var db = new QLKEntities()) 
+            using (var db = new QLKEntities())
             {
-                db.LoaiSPs.Add(new LoaiSanPham
+                bool isExist = db.LoaiSanPhams.Any(x => x.MaLoai == MaLoai);
+                if (isExist)
                 {
-                    TenLoai = TenDanhMuc
+                    MessageBox.Show("Mã loại đã tồn tại!");
+                    return;
+                }
+                db.LoaiSanPhams.Add(new LoaiSanPham
+                {
+                    MaLoai = MaLoai,
+                    TenLoai = TenDanhMuc,
+                    
                 });
 
                 db.SaveChanges();
             }
 
             MessageBox.Show("Thêm thành công!");
+            MaLoai = "";
+            TenDanhMuc = "";
+            MoTa = "";
         }
     }
 }

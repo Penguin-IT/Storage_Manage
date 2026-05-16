@@ -1,12 +1,9 @@
 ﻿using Microsoft.Win32;
 using StorageManage.Models;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -14,14 +11,31 @@ namespace StorageManage.ViewModels
 {
     public class ThemMoiSanPham : BaseViewModel
     {
-        public string TenSanPham { get; set; }
-        public double Gia { get; set; }
-        public DateTime NgayNhap { get; set; } = DateTime.Now;
 
-        public string ImagePath { get; set; }
+        private string _tenSanPham;
+        public string TenSanPham
+        {
+            get => _tenSanPham;
+            set
+            {
+                _tenSanPham = value;
+                OnPropertyChanged(nameof(TenSanPham));
+            }
+        }
 
-        private ObservableCollection<TaoMoiDanhMuc> _danhMucs;
-        public ObservableCollection<TaoMoiDanhMuc> DanhMucs
+        private double _gia;
+        public double Gia
+        {
+            get => _gia;
+            set
+            {
+                _gia = value;
+                OnPropertyChanged(nameof(Gia));
+            }
+        }
+
+        private ObservableCollection<LoaiSanPham> _danhMucs;
+        public ObservableCollection<LoaiSanPham> DanhMucs
         {
             get => _danhMucs;
             set
@@ -30,8 +44,9 @@ namespace StorageManage.ViewModels
                 OnPropertyChanged(nameof(DanhMucs));
             }
         }
-        private TaoMoiDanhMuc _selectedDanhMuc;
-        public TaoMoiDanhMuc SelectedDanhMuc
+
+        private LoaiSanPham _selectedDanhMuc;
+        public LoaiSanPham SelectedDanhMuc
         {
             get => _selectedDanhMuc;
             set
@@ -42,33 +57,22 @@ namespace StorageManage.ViewModels
         }
 
         public ICommand SaveCommand { get; set; }
-        public ICommand ChonAnhCommand { get; set; }
 
         public ThemMoiSanPham()
         {
-            LoadDanhMuc();
-
             SaveCommand = new RelayCommand(_ => Save());
-            ChonAnhCommand = new RelayCommand(_ => ChonAnh());
+
+            if (!System.ComponentModel.DesignerProperties.GetIsInDesignMode(new DependencyObject()))
+            {
+                LoadDanhMuc();
+            }
         }
 
         void LoadDanhMuc()
         {
-            using (var db = new MyDbContext())
+            using (var db = new QLKEntities())
             {
-                DanhMucs = new ObservableCollection<TaoMoiDanhMuc>(db.DanhMucs.ToList());
-            }
-        }
-
-        void ChonAnh()
-        {
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "Image|*.jpg;*.png";
-
-            if (dlg.ShowDialog() == true)
-            {
-                ImagePath = dlg.FileName;
-                OnPropertyChanged(nameof(ImagePath));
+                DanhMucs = new ObservableCollection<LoaiSanPham>(db.LoaiSanPhams.ToList());
             }
         }
 
@@ -80,27 +84,35 @@ namespace StorageManage.ViewModels
                 return;
             }
 
+            if (Gia <= 0)
+            {
+                MessageBox.Show("Giá phải lớn hơn 0!");
+                return;
+            }
+
             if (SelectedDanhMuc == null)
             {
                 MessageBox.Show("Phải chọn danh mục!");
                 return;
             }
 
-            using (var db = new MyDbContext())
+            using (var db = new QLKEntities())
             {
                 db.SanPhams.Add(new SanPham
                 {
-                    TenSanPham = TenSanPham,
-                    Gia = Gia,
-                    NgayNhap = NgayNhap,
-                    ImagePath = ImagePath,
-                    DanhMucId = SelectedDanhMuc.Id
+                    TenSP = TenSanPham,
+                    DonGia = (int)Gia,
+                    MaLoai = SelectedDanhMuc.MaLoai
                 });
 
                 db.SaveChanges();
             }
 
             MessageBox.Show("Thêm sản phẩm thành công!");
+
+            TenSanPham = "";
+            Gia = 0;
+            SelectedDanhMuc = null;
         }
     }
 }
