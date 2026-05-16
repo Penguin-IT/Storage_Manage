@@ -4,27 +4,76 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:StorageManage.Views"
+             xmlns:vm="clr-namespace:StorageManage.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Margin="20" Background="White">
-        <StackPanel>
 
-            <TextBlock Text="TẠO DANH MỤC"
-                       FontSize="20"
-                       FontWeight="Bold"
-                       HorizontalAlignment="Center"/>
+    <UserControl.DataContext>
+        <vm:TaoMoiDanhMuc/>
+    </UserControl.DataContext>
 
-            <TextBox Text="{Binding TenDanhMuc}" Margin="5"/>
+    <Grid Background="Transparent">
+        <Border Background="White" 
+                BorderBrush="#BDC3C7" 
+                BorderThickness="1" 
+                CornerRadius="8" 
+                Padding="30" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="450"
+                Margin="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" Opacity="0.1" ShadowDepth="2"/>
+            </Border.Effect>
 
-            <TextBox Text="{Binding MoTa}"
-                     Height="80"
-                     AcceptsReturn="True"
-                     Margin="5"/>
+            <StackPanel>
+                <TextBlock Text="THÊM MỚI DANH MỤC"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="#2C3E50"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,25"/>
 
-            <Button Content="Lưu"
-                    Command="{Binding SaveCommand}"
-                    Margin="5"/>
+                <TextBlock Text="Tên danh mục (*)" 
+                           FontWeight="SemiBold" 
+                           Foreground="#34495E" 
+                           Margin="0,0,0,5"/>
+                <TextBox Text="{Binding TenDanhMuc, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="35" 
+                         Padding="8,5" 
+                         FontSize="14" 
+                         VerticalContentAlignment="Center"
+                         Margin="0,0,0,20"/>
 
-        </StackPanel>
+                <TextBlock Text="Mô tả danh mục" 
+                           FontWeight="SemiBold" 
+                           Foreground="#34495E" 
+                           Margin="0,0,0,5"/>
+                <TextBox Text="{Binding MoTa, UpdateSourceTrigger=PropertyChanged}"
+                         Height="100"
+                         Padding="8"
+                         FontSize="14"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True"
+                         VerticalScrollBarVisibility="Auto"
+                         Margin="0,0,0,30"/>
+
+                <Button Content="LƯU DANH MỤC"
+                        Command="{Binding SaveCommand}"
+                        Height="45"
+                        FontSize="15"
+                        FontWeight="Bold"
+                        Background="#27AE60"
+                        Foreground="White"
+                        Cursor="Hand"
+                        BorderThickness="0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </Border>
     </Grid>
 </UserControl>

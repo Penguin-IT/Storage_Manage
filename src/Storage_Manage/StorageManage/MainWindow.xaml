@@ -4,10 +4,82 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Hệ Thống Quản Lý Nhà Kho" Height="600" Width="1000"
+        Title="Hệ Thống Quản Lý Nhà Kho" Height="650" Width="1000"
         WindowStartupLocation="CenterScreen">
 
+    <Window.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="30,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#34495E"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
 
+        <Style x:Key="GroupHeaderStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#7F8C8D"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="15,15,0,5"/>
+        </Style>
+    </Window.Resources>
 
-    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="#2C3E50">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock Text="KHO HÀNG" Foreground="White" FontSize="24" FontWeight="Bold" 
+                               HorizontalAlignment="Center" Margin="0,25,0,20"/>
+
+                    <TextBlock Text="CHUNG" Style="{StaticResource GroupHeaderStyle}"/>
+                    <Button Content="Trang Chủ" Command="{Binding HomeViewCommand}" 
+                            Style="{StaticResource MenuButtonStyle}"/>
+          
+
+                    <TextBlock Text="NGHIỆP VỤ" Style="{StaticResource GroupHeaderStyle}"/>
+                    <Button Content="Tạo Hoá Đơn Nhập" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="Tạo Hoá Đơn Bán" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="Tìm Kiếm Chứng Từ" Style="{StaticResource MenuButtonStyle}"/>
+
+                    <TextBlock Text="DANH MỤC" Style="{StaticResource GroupHeaderStyle}"/>
+                    <Button Content="Thêm Danh Mục" Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="Thêm Sản Phẩm" Style="{StaticResource MenuButtonStyle}"/>
+
+                    <TextBlock Text="THỐNG KÊ" Style="{StaticResource GroupHeaderStyle}"/>
+                    <Button Content="Thống Kê Doanh Thu" Style="{StaticResource MenuButtonStyle}"/>
+
+                    <TextBlock Text="HỆ THỐNG" Style="{StaticResource GroupHeaderStyle}"/>
+                    <Button x:Name="btnAccountManage" Content="Quản lý Tài khoản" 
+                            Command="{Binding AccountViewCommand}" 
+                            Style="{StaticResource MenuButtonStyle}"/>
+
+                    <Button Content="Đổi Mật Khẩu" Command="{Binding PasswordViewCommand}" 
+                            Style="{StaticResource MenuButtonStyle}"/>
+
+                    <Button Content="Đăng Xuất" Click="btnLogout_Click" 
+                            Style="{StaticResource MenuButtonStyle}" Margin="0,30,0,20" Foreground="#E74C3C"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <Border Grid.Column="1" Background="#ECF0F1">
+            <Grid Margin="15">
+                <ContentControl Content="{Binding CurrentView}" />
+            </Grid>
+        </Border>
+
+    </Grid>
 </Window>

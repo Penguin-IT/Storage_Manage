@@ -115,14 +115,34 @@
     <Compile Include="Models\TaiKhoan.cs">
       <DependentUpon>QLKhoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\AccountViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\MainWindow.cs" />
     <Compile Include="ViewModels\NhapHoaDon.cs" />
+    <Compile Include="ViewModels\PassConverter.cs" />
+    <Compile Include="ViewModels\PasswordViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
+    <Compile Include="ViewModels\TaoMoiDanhMuc.cs" />
+    <Compile Include="ViewModels\ThemMoiSanPham.cs" />
     <Compile Include="ViewModels\ThongKe.cs" />
     <Compile Include="ViewModels\Timkiem.cs" />
     <Compile Include="ViewModels\XuatHoaDon.cs" />
+    <Compile Include="Views\AccountView.xaml.cs">
+      <DependentUpon>AccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login_UI.xaml.cs">
+      <DependentUpon>Login_UI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\NhapHoaDon.xaml.cs">
       <DependentUpon>NhapHoaDon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PasswordView.xaml.cs">
+      <DependentUpon>PasswordView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report.xaml.cs">
+      <DependentUpon>Report.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TaoHoaDonBan.xaml.cs">
       <DependentUpon>TaoHoaDonBan.xaml</DependentUpon>
@@ -151,9 +171,25 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\AccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Login_UI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\NhapHoaDon.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PasswordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\TaoHoaDonBan.xaml">
       <Generator>MSBuild:Compile</Generator>

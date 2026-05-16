@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="StorageManage.Views.AccountView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StorageManage.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#F0F2F5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <!-- Danh sách -->
+            <ColumnDefinition Width="1*"/>
+            <!-- Form nhập -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Danh sách tài khoản -->
+        <GroupBox Header="Danh sách tài khoản" Margin="10" Padding="5">
+            <DataGrid ItemsSource="{Binding ListUser}" 
+                      SelectedItem="{Binding SelectedUser}"
+                      AutoGenerateColumns="False" 
+                      IsReadOnly="True" 
+                      SelectionMode="Single">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Tên Đăng Nhập" Binding="{Binding Username}" Width="*"/>
+                    <DataGridTextColumn Header="Vai Trò" Binding="{Binding Role}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+
+        <!-- Form thao tác -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="THÔNG TIN TÀI KHOẢN" FontWeight="Bold" Margin="0,0,0,10" HorizontalAlignment="Center" />
+
+            <TextBlock Text="Tên đăng nhập:"/>
+            <TextBox Text="{Binding NewUsername, UpdateSourceTrigger=PropertyChanged}" Height="30" Margin="0,5,0,10"/>
+
+            <TextBlock Text="Mật khẩu:"/>
+            <TextBox Text="{Binding NewPassword, UpdateSourceTrigger=PropertyChanged}" Height="30" Margin="0,5,0,10"/>
+
+            <TextBlock Text="Vai trò:"/>
+            <ComboBox SelectedValue="{Binding SelectedRole}" SelectedValuePath="Content">
+                <ComboBoxItem Content="Quản lý"/>
+                <ComboBoxItem Content="Nhân viên"/>
+            </ComboBox>
+
+            <Button Content="Thêm Tài Khoản" Command="{Binding AddAccountCommand}" 
+                    Height="35" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Xóa Tài Khoản" Command="{Binding DeleteAccountCommand}" 
+                    Height="35" Background="#F44336" Foreground="White" FontWeight="Bold" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

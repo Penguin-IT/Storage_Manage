@@ -4,37 +4,91 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:StorageManage.Views"
+             xmlns:vm="clr-namespace:StorageManage.ViewModels"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Margin="20" Background="White">
-        <StackPanel>
+             d:DesignHeight="600" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <vm:ThemMoiSanPham/>
+    </UserControl.DataContext>
+    <Grid Background="Transparent">
+        <Border Background="White" 
+                BorderBrush="#BDC3C7" 
+                BorderThickness="1" 
+                CornerRadius="8" 
+                Padding="30" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Width="500"
+                Margin="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Black" Opacity="0.1" ShadowDepth="2"/>
+            </Border.Effect>
 
-            <TextBlock Text="THÊM SẢN PHẨM"
-                       FontSize="20"
-                       FontWeight="Bold"
-                       HorizontalAlignment="Center"/>
+            <StackPanel>
+                <TextBlock Text="THÊM MỚI SẢN PHẨM"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="#2C3E50"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,25"/>
 
-            <TextBox Text="{Binding TenSanPham}" Margin="5"/>
+                <TextBlock Text="Tên sản phẩm (*)" FontWeight="SemiBold" Foreground="#34495E" Margin="0,0,0,5"/>
+                <TextBox Text="{Binding TenSanPham, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="35" Padding="8,5" FontSize="14" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
 
-            <TextBox Text="{Binding Gia}" Margin="5"/>
+                <TextBlock Text="Giá sản phẩm (VNĐ) (*)" FontWeight="SemiBold" Foreground="#34495E" Margin="0,0,0,5"/>
+                <TextBox Text="{Binding Gia, UpdateSourceTrigger=PropertyChanged}" 
+                         Height="35" Padding="8,5" FontSize="14" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
 
-            <ComboBox ItemsSource="{Binding DanhMucs}"
-                      SelectedItem="{Binding SelectedDanhMuc}"
-                      DisplayMemberPath="TenDanhMuc"
-                      Margin="5"/>
+                <TextBlock Text="Loại danh mục (*)" FontWeight="SemiBold" Foreground="#34495E" Margin="0,0,0,5"/>
+                <ComboBox ItemsSource="{Binding DanhMucs}"
+                          SelectedItem="{Binding SelectedDanhMuc}"
+                          DisplayMemberPath="TenDanhMuc"
+                          Height="35" FontSize="14" Padding="5" Margin="0,0,0,15"/>
 
-            <DatePicker SelectedDate="{Binding NgayNhap}" Margin="5"/>
+                <TextBlock Text="Ngày nhập kho" FontWeight="SemiBold" Foreground="#34495E" Margin="0,0,0,5"/>
+                <DatePicker SelectedDate="{Binding NgayNhap}" Height="35" FontSize="14" Margin="0,0,0,15"/>
 
-            <Image Source="{Binding ImagePath}" Height="120" Margin="5"/>
+                <TextBlock Text="Hình ảnh sản phẩm" FontWeight="SemiBold" Foreground="#34495E" Margin="0,0,0,5"/>
+                <Grid Margin="0,0,0,25">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                        
+                    <Border Grid.Column="0" BorderBrush="#BDC3C7" BorderThickness="1" CornerRadius="5" Height="100" Margin="0,0,10,0" Background="#F8F9FA">
+                        <Image Source="{Binding ImagePath}" Stretch="Uniform" Margin="5"/>
+                    </Border>
 
-            <Button Content="Chọn ảnh"
-                    Command="{Binding ChonAnhCommand}"
-                    Margin="5"/>
+                    <Button Grid.Column="1" Content="Tải ảnh lên"
+                            Command="{Binding ChonAnhCommand}"
+                            Height="35" Width="100"
+                            VerticalAlignment="Center"
+                            Background="#3498DB" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
 
-            <Button Content="Lưu"
-                    Command="{Binding SaveCommand}"
-                    Margin="5"/>
-
-        </StackPanel>
+                <Button Content="LƯU SẢN PHẨM"
+                        Command="{Binding SaveCommand}"
+                        Height="45"
+                        FontSize="15"
+                        FontWeight="Bold"
+                        Background="#27AE60"
+                        Foreground="White"
+                        Cursor="Hand"
+                        BorderThickness="0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </Border>
     </Grid>
 </UserControl>

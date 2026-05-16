@@ -1,0 +1,627 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\taomoidanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\taomoidanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\themmoisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\themmoisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\themdanhmuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\themdanhmuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\themsanpham.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\themsanpham.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\views\\taohoadonban.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\taohoadonban.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\views\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\nhaphoadon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\nhaphoadon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\views\\passwordview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\passwordview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\views\\passwordview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\passwordview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\views\\login_ui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\login_ui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\views\\login_ui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\login_ui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\viewmodels\\timkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\timkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\passwordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\passwordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\viewmodels\\passconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\passconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\viewmodels\\nhaphoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\nhaphoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|d:\\doannhat\\storage_manage\\src\\storage_manage\\storagemanage\\views\\accountview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\accountview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\viewmodels\\xuathoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\xuathoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\timkiemuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\timkiemuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\viewmodels\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\viewmodels\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\thongkedoanhthuuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\thongkedoanhthuuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\models\\nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\models\\nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\nhaphoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\nhaphoadon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\taohoadonban.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\taohoadonban.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\views\\thongkedoanhthuuc.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\views\\thongkedoanhthuuc.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\obj\\Debug\\Views\\ThongKeDoanhThuUC.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StorageManage\\obj\\Debug\\Views\\ThongKeDoanhThuUC.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\storagemanage\\models\\phieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0323073A-8AD1-4554-B0F5-835A95628EB1}|StorageManage\\StorageManage.csproj|solutionrelative:storagemanage\\models\\phieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 270,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Report.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\Report.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\Report.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\Report.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\Report.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T07:32:52.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThemMoiSanPham.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\ThemMoiSanPham.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\ThemMoiSanPham.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\ThemMoiSanPham.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\ThemMoiSanPham.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAmwFoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T07:31:24.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaoMoiDanhMuc.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\TaoMoiDanhMuc.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\TaoMoiDanhMuc.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\TaoMoiDanhMuc.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\TaoMoiDanhMuc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T07:31:01.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThemDanhMuc.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThemDanhMuc.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\ThemDanhMuc.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThemDanhMuc.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\ThemDanhMuc.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThemSanPham.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThemSanPham.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\ThemSanPham.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThemSanPham.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\ThemSanPham.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhapHoaDon.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\NhapHoaDon.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\NhapHoaDon.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\NhapHoaDon.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\NhapHoaDon.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaoHoaDonBan.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\TaoHoaDonBan.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\TaoHoaDonBan.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\TaoHoaDonBan.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\TaoHoaDonBan.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\App.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\App.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\App.xaml",
+              "RelativeToolTip": "StorageManage\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PasswordView.xaml.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\PasswordView.xaml.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\PasswordView.xaml.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\PasswordView.xaml.cs",
+              "RelativeToolTip": "StorageManage\\Views\\PasswordView.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAkwDAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T07:11:14.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:43:15.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PasswordView.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\PasswordView.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\PasswordView.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\PasswordView.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\PasswordView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:52:08.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\MainWindow.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\MainWindow.xaml",
+              "RelativeToolTip": "StorageManage\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login_UI.xaml.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\Login_UI.xaml.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\Login_UI.xaml.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\Login_UI.xaml.cs",
+              "RelativeToolTip": "StorageManage\\Views\\Login_UI.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T07:09:24.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NhaCungCap.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Models\\NhaCungCap.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Models\\NhaCungCap.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Models\\NhaCungCap.cs",
+              "RelativeToolTip": "StorageManage\\Models\\NhaCungCap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ThongKeDoanhThuUC.xaml.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThongKeDoanhThuUC.xaml.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\ThongKeDoanhThuUC.xaml.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThongKeDoanhThuUC.xaml.cs",
+              "RelativeToolTip": "StorageManage\\Views\\ThongKeDoanhThuUC.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ThongKeDoanhThuUC.g.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\obj\\Debug\\Views\\ThongKeDoanhThuUC.g.cs",
+              "RelativeDocumentMoniker": "StorageManage\\obj\\Debug\\Views\\ThongKeDoanhThuUC.g.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\obj\\Debug\\Views\\ThongKeDoanhThuUC.g.cs",
+              "RelativeToolTip": "StorageManage\\obj\\Debug\\Views\\ThongKeDoanhThuUC.g.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwDIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TaoHoaDonBan.xaml.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\TaoHoaDonBan.xaml.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\TaoHoaDonBan.xaml.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\TaoHoaDonBan.xaml.cs",
+              "RelativeToolTip": "StorageManage\\Views\\TaoHoaDonBan.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "NhapHoaDon.xaml.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\NhapHoaDon.xaml.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\NhapHoaDon.xaml.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\NhapHoaDon.xaml.cs",
+              "RelativeToolTip": "StorageManage\\Views\\NhapHoaDon.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login_UI.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\Login_UI.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\Login_UI.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\Login_UI.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\Login_UI.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:51:08.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ThongKe.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\ThongKe.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\ThongKe.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\ThongKe.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\ThongKe.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TimKiemUC.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\TimKiemUC.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\TimKiemUC.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\TimKiemUC.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\TimKiemUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ThongKeDoanhThuUC.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThongKeDoanhThuUC.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\ThongKeDoanhThuUC.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\ThongKeDoanhThuUC.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\ThongKeDoanhThuUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:21:13.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Models\\SanPham.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Models\\SanPham.cs",
+              "RelativeToolTip": "StorageManage\\Models\\SanPham.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "StorageManage\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\MainWindow.xaml.cs",
+              "RelativeToolTip": "StorageManage\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADAAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\MainWindow.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\MainWindow.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\MainWindow.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\MainWindow.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAswBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:44:55.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA8wC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:43:55.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Timkiem.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\Timkiem.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\Timkiem.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\Timkiem.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\Timkiem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PasswordViewModel.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\PasswordViewModel.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\PasswordViewModel.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\PasswordViewModel.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\PasswordViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:46:59.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AccountViewModel.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\AccountViewModel.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\AccountViewModel.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\AccountViewModel.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\AccountViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:42:53.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PassConverter.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\PassConverter.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\PassConverter.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\PassConverter.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\PassConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:45:35.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NhapHoaDon.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\NhapHoaDon.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\NhapHoaDon.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\NhapHoaDon.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\NhapHoaDon.cs",
+              "ViewState": "AgIAAIoBAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\RelayCommand.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\RelayCommand.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\RelayCommand.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwCoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\App.config",
+              "RelativeDocumentMoniker": "StorageManage\\App.config",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\App.config",
+              "RelativeToolTip": "StorageManage\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-16T06:21:13.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AccountView.xaml",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\AccountView.xaml",
+              "RelativeDocumentMoniker": "StorageManage\\Views\\AccountView.xaml",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Views\\AccountView.xaml",
+              "RelativeToolTip": "StorageManage\\Views\\AccountView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-16T06:50:13.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "XuatHoaDon.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\XuatHoaDon.cs",
+              "RelativeDocumentMoniker": "StorageManage\\ViewModels\\XuatHoaDon.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\ViewModels\\XuatHoaDon.cs",
+              "RelativeToolTip": "StorageManage\\ViewModels\\XuatHoaDon.cs",
+              "ViewState": "AgIAAHUBAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVDhPYxgFCHDx8cX/cavj/mtO0Pyv2qf6P3Jl5H\u002BoFMPbj2//q09QB/OR2SDACCIuP7n8P2JtBIOZtBlDokEiAz87P8ONNzcYwg3DGUEaTOaYgBUjAzZmNoabBTfB\u002BhlS16f\u002B91rg9f/Lly9wk5EBPhcwgYhTT08xeKh4MPDw8EBMJAGADWBlYgVjbADmhV9/fzEo9irC2ciuYIheGf0/bHkYVueDAD4vgJ188v7J/1Froxg8VD0YwrTCGFiZWRkuv7rMkG6RTtBLcAV7bu75P/X0VIa77\u002B8ycLJyMjjIOTB0enWSHCYjDzAwAADfwHLttPx8VwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-05-16T06:21:13.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PhieuNhap.cs",
+              "DocumentMoniker": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Models\\PhieuNhap.cs",
+              "RelativeDocumentMoniker": "StorageManage\\Models\\PhieuNhap.cs",
+              "ToolTip": "D:\\DoAnNhat\\Storage_Manage\\src\\Storage_Manage\\StorageManage\\Models\\PhieuNhap.cs",
+              "RelativeToolTip": "StorageManage\\Models\\PhieuNhap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T06:21:13.525Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

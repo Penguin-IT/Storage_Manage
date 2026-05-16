@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\
+D:\DoAnNhat\Storage_Manage\src\Storage_Manage\StorageManage\obj\Debug\
 StorageManage
 none
 false
 DEBUG;TRACE
-E:\DoAn.Net\Storage_Manage\src\Storage_Manage\StorageManage\App.xaml
-7-993152796
+D:\DoAnNhat\Storage_Manage\src\Storage_Manage\StorageManage\App.xaml
+11582120328
 2-1887771329
-311717660361
-181459181271
-MainWindow.xaml;Views\NhapHoaDon.xaml;Views\TaoHoaDonBan.xaml;Views\ThemDanhMuc.xaml;Views\ThemSanPham.xaml;Views\ThongKeDoanhThuUC.xaml;Views\TimKiemUC.xaml;
+43328850459
+182035199295
+MainWindow.xaml;Views\AccountView.xaml;Views\Login_UI.xaml;Views\NhapHoaDon.xaml;Views\PasswordView.xaml;Views\Report.xaml;Views\TaoHoaDonBan.xaml;Views\ThemDanhMuc.xaml;Views\ThemSanPham.xaml;Views\ThongKeDoanhThuUC.xaml;Views\TimKiemUC.xaml;
 
 False
 
