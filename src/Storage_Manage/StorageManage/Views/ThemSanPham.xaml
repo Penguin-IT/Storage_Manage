@@ -20,7 +20,7 @@
 
             <ComboBox ItemsSource="{Binding DanhMucs}"
                       SelectedItem="{Binding SelectedDanhMuc}"
-                      DisplayMemberPath="TenDanhMuc"
+                      DisplayMemberPath="TenLoai"
                       Margin="5"/>
 
             <DatePicker SelectedDate="{Binding NgayNhap}" Margin="5"/>

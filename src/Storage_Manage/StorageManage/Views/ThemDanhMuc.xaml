@@ -16,10 +16,7 @@
 
             <TextBox Text="{Binding TenDanhMuc}" Margin="5"/>
 
-            <TextBox Text="{Binding MoTa}"
-                     Height="80"
-                     AcceptsReturn="True"
-                     Margin="5"/>
+            
 
             <Button Content="Lưu"
                     Command="{Binding SaveCommand}"
