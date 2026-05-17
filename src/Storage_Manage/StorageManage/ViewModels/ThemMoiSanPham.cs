@@ -56,11 +56,34 @@ namespace StorageManage.ViewModels
             }
         }
 
+        private string _imagePath;
+        public string ImagePath
+        {
+            get => _imagePath;
+            set
+            {
+                _imagePath = value;
+                OnPropertyChanged(nameof(ImagePath));
+            }
+        }
+
+        private DateTime _ngayNhap = DateTime.Now;
+        public DateTime NgayNhap
+        {
+            get => _ngayNhap;
+            set
+            {
+                _ngayNhap = value;
+                OnPropertyChanged(nameof(NgayNhap));
+            }
+        }
         public ICommand SaveCommand { get; set; }
+        public ICommand ChonAnhCommand { get; set; }
 
         public ThemMoiSanPham()
         {
             SaveCommand = new RelayCommand(_ => Save());
+            ChonAnhCommand = new RelayCommand(_ => ChonAnh());
 
             if (!System.ComponentModel.DesignerProperties.GetIsInDesignMode(new DependencyObject()))
             {
@@ -73,6 +96,17 @@ namespace StorageManage.ViewModels
             using (var db = new QLKEntities())
             {
                 DanhMucs = new ObservableCollection<LoaiSanPham>(db.LoaiSanPhams.ToList());
+            }
+        }
+
+        void ChonAnh()
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Image files (*.png;*.jpg)|*.png;*.jpg";
+
+            if (dialog.ShowDialog() == true)
+            {
+                ImagePath = dialog.FileName;
             }
         }
 

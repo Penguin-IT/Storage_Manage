@@ -10,7 +10,7 @@ using System.Windows.Input;
 namespace StorageManage.ViewModels
 {
     public class TaoMoiDanhMuc : BaseViewModel
-    {
+    { 
         private string _maLoai;
         public string MaLoai
         {
@@ -30,17 +30,6 @@ namespace StorageManage.ViewModels
             {
                 _tenDanhMuc = value;
                 OnPropertyChanged(nameof(TenDanhMuc)); 
-            }
-        }
-
-        private string _moTa;
-        public string MoTa
-        {
-            get => _moTa;
-            set
-            {
-                _moTa = value;
-                OnPropertyChanged(nameof(MoTa));
             }
         }
 
@@ -81,7 +70,6 @@ namespace StorageManage.ViewModels
             MessageBox.Show("Thêm thành công!");
             MaLoai = "";
             TenDanhMuc = "";
-            MoTa = "";
         }
     }
 }
