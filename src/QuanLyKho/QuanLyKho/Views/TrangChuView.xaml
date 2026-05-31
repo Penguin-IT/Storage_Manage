@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="QuanLyKho.Views.TrangChuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1080">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="0,0,0,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="{StaticResource BgSurface}" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" CornerRadius="14" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="6" ShadowDepth="2" Opacity="0.05"/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="TỔNG ĐƠN NHẬP" FontSize="13" Foreground="{StaticResource TextMuted}" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                    <TextBlock Text="{Binding TongDonNhap}" FontSize="24" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Background="{StaticResource BgSurface}" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" CornerRadius="14" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="6" ShadowDepth="2" Opacity="0.05"/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="TỔNG ĐƠN XUẤT" FontSize="13" Foreground="{StaticResource TextMuted}" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                    <TextBlock Text="{Binding TongDonXuat}" FontSize="24" FontWeight="Bold" Foreground="{StaticResource SuccessColor}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="4" Background="{StaticResource BgSurface}" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" CornerRadius="14" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="6" ShadowDepth="2" Opacity="0.05"/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="SẢN PHẨM SẮP HẾT" FontSize="13" Foreground="{StaticResource TextMuted}" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                    <TextBlock Text="{Binding CanhBaoTonKho}" FontSize="24" FontWeight="Bold" Foreground="{StaticResource WarningColor}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="6" Background="{StaticResource BgSurface}" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" CornerRadius="14" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="6" ShadowDepth="2" Opacity="0.05"/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="DOANH THU THÁNG" FontSize="13" Foreground="{StaticResource TextMuted}" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                    <TextBlock Text="{Binding DoanhThuThang, StringFormat=\{0:N0\} VNĐ}" FontSize="24" FontWeight="Bold" Foreground="{StaticResource DangerColor}"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <TextBlock Grid.Row="1" Text="Giao dịch gần đây" FontSize="18" FontWeight="Bold" Foreground="{StaticResource TextDark}" Margin="0,0,0,15"/>
+
+        <Border Grid.Row="2" Background="{StaticResource BgSurface}" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" CornerRadius="14" Padding="15">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="6" ShadowDepth="2" Opacity="0.05"/>
+            </Border.Effect>
+
+            <DataGrid ItemsSource="{Binding DanhSachGiaoDich}" AutoGenerateColumns="False" CanUserAddRows="False" 
+                      Background="Transparent" BorderThickness="0" GridLinesVisibility="Horizontal" RowHeight="45">
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#F8F9FA"/>
+                        <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Padding" Value="10,0"/>
+                        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,2"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="MÃ PHIẾU" Binding="{Binding MaPhieu}" Width="1*"/>
+                    <DataGridTextColumn Header="ĐỐI TÁC" Binding="{Binding DoiTac}" Width="2*"/>
+                    <DataGridTextColumn Header="NGÀY LẬP" Binding="{Binding NgayGiaoDich, StringFormat=\{0:dd/MM/yyyy\}}" Width="1.5*"/>
+                    <DataGridTextColumn Header="TỔNG TIỀN" Binding="{Binding TongTien, StringFormat=\{0:N0\} VNĐ}" Width="1.5*"/>
+                    <DataGridTextColumn Header="TRẠNG THÁI" Binding="{Binding TrangThai}" Width="1.5*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,248 @@
+﻿<Window x:Class="QuanLyKho.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vms="clr-namespace:QuanLyKho.ViewModels"
+        xmlns:views="clr-namespace:QuanLyKho.Views"
+        Title="Hệ Thống Quản Lý Kho - Storage Pro" Height="800" Width="1400"
+        WindowStartupLocation="CenterScreen" Background="{StaticResource BgBody}"
+        FontFamily="Segoe UI">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+        <DataTemplate DataType="{x:Type vms:TrangChuViewModel}">
+            <views:TrangChuView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:ThemDanhMucViewModel}">
+            <views:ThemDanhMucView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:NhaCungCapViewModel}">
+            <views:NhaCungCapView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:DaiLyViewModel}">
+            <views:DaiLyView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:ThemSanPhamViewModel}">
+            <views:ThemSanPhamView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:TaoHoaDonNhapViewModel}">
+            <views:TaoHoaDonNhapView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:TaoHoaDonBanViewModel}">
+            <views:TaoHoaDonBanView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:PhieuKiemKeViewModel}">
+            <views:PhieuKiemKeView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:TimKiemChungTuViewModel}">
+            <views:TimKiemChungTuView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:TraCuuTonKhoViewModel}">
+            <views:TraCuuTonKhoView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:ThongKeDoanhThuViewModel}">
+            <views:ThongKeDoanhThuView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:InBaoCaoViewModel}">
+            <views:InBaoCaoView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:BaoCaoPhanTichViewModel}">
+            <views:BaoCaoPhanTichView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:QuanLyTaiKhoanViewModel}">
+            <views:QuanLyTaiKhoanView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:DoiMatKhauViewModel}">
+            <views:DoiMatKhauView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:DangNhapViewModel}">
+            <views:DangNhapView/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Width="280" Background="{StaticResource BgSurface}"
+                BorderBrush="{StaticResource BorderColor}" BorderThickness="0,0,1,0" Panel.ZIndex="10"
+                Visibility="{Binding IsLoggedIn, Converter={StaticResource BoolToVis}}">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="6" ShadowDepth="2" Opacity="0.05"/>
+            </Border.Effect>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="25,30,20,20" VerticalAlignment="Center">
+                    <TextBlock Text="STORAGE" FontSize="22" FontWeight="Black" Foreground="{StaticResource TextDark}"/>
+                    <TextBlock Text="PRO" FontSize="22" FontWeight="Black" Foreground="{StaticResource PrimaryColor}"/>
+                </StackPanel>
+
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" Margin="0,10,0,0">
+                    <StackPanel Margin="0,0,0,20">
+
+                        <TextBlock Text="CHUNG" Style="{StaticResource MenuTitleStyle}"/>
+                        <Button Command="{Binding TrangChuCmd}" Style="{StaticResource MenuButtonStyle}" Tag="Active">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE80F;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Trang Chủ" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <TextBlock Text="DANH MỤC" Style="{StaticResource MenuTitleStyle}"/>
+                        <Button Command="{Binding ThemDanhMucCmd}" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVis}}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE8EC;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Thêm Danh Mục" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding NhaCungCapCmd}" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVis}}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE825;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Nhà Cung Cấp" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding DaiLyCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE716;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Đại Lý / Khách Hàng" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <TextBlock Text="NGHIỆP VỤ" Style="{StaticResource MenuTitleStyle}"/>
+                        <Button Command="{Binding ThemSanPhamCmd}" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVis}}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE7B8;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Thêm Sản Phẩm" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding TaoHoaDonNhapCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE8E5;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Tạo Hoá Đơn Nhập" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding TaoHoaDonBanCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE8D5;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Tạo Hoá Đơn Bán" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding PhieuKiemKeCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE82D;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Phiếu Kiểm Kê" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <TextBlock Text="TRA CỨU" Style="{StaticResource MenuTitleStyle}"/>
+                        <Button Command="{Binding TimKiemChungTuCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE721;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Tìm Kiếm Chứng Từ" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding TonKhoCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE809;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Tra Cứu Tồn Kho" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <TextBlock Text="THỐNG KÊ &amp; BÁO CÁO" Style="{StaticResource MenuTitleStyle}"/>
+                        <Button Command="{Binding ThongKeDoanhThuCmd}" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVis}}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE9D2;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Thống Kê Doanh Thu" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding InBaoCaoCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE7FD;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="In Báo Cáo" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding BaoCaoPhanTichCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xEB05;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Báo Cáo Phân Tích" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <TextBlock Text="HỆ THỐNG" Style="{StaticResource MenuTitleStyle}"/>
+                        <Button Command="{Binding QuanLyTaiKhoanCmd}" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVis}}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE77B;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Quản Lý Tài Khoản" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Command="{Binding DoiMatKhauCmd}" Style="{StaticResource MenuButtonStyle}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xE8D7;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" VerticalAlignment="Center"/>
+                                <TextBlock Text="Đổi Mật Khẩu" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Button Command="{Binding DangXuatCmd}" Grid.Row="2" Margin="15,10,15,20" Padding="20,12" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#xE748;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" Foreground="{StaticResource DangerColor}" VerticalAlignment="Center"/>
+                        <TextBlock Text="Đăng Xuất" Foreground="{StaticResource DangerColor}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Command="{Binding DangXuatCmd}" Grid.Row="2" Margin="15,10,15,20" Padding="20,12" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#xE748;" FontFamily="Segoe MDL2 Assets" FontSize="16" Width="35" Foreground="{StaticResource DangerColor}" VerticalAlignment="Center"/>
+                        <TextBlock Text="Đăng Xuất" Foreground="{StaticResource DangerColor}" FontWeight="Bold" FontSize="14" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Column="1" Margin="40,30,40,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="0,0,0,30" Visibility="{Binding IsLoggedIn, Converter={StaticResource BoolToVis}}">
+                
+
+                <Border HorizontalAlignment="Right" Background="{StaticResource BgSurface}" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" CornerRadius="25" Padding="8,5,15,5" Cursor="Hand">
+                    <StackPanel Orientation="Horizontal">
+                        <Border Width="36" Height="36" CornerRadius="18" Background="{StaticResource PrimaryColor}">
+                            <TextBlock Text="U" Foreground="White" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                        <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding TenHienThi}" FontWeight="SemiBold" FontSize="13" Foreground="{StaticResource TextDark}"/>
+                            <TextBlock Text="{Binding VaiTroHienThi}" FontSize="11" Foreground="{StaticResource TextMuted}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <ContentControl x:Name="MainContentControl" Content="{Binding CurrentView}" Grid.Row="1" Focusable="False"/>
+        </Grid>
+    </Grid>
+</Window>

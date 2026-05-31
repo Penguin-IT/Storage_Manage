@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="QuanLyKho.Views.TraCuuTonKhoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000" Background="Transparent">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#FAFBFC" CornerRadius="12" Padding="20" BorderBrush="{StaticResource BorderColor}" BorderThickness="1" Margin="0,0,0,20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="0,0,15,0">
+                    <TextBlock Text="Lọc theo Loại Danh Mục" FontSize="12" FontWeight="SemiBold" Foreground="{StaticResource TextMuted}" Margin="0,0,0,6"/>
+                    <ComboBox Padding="10" BorderBrush="{StaticResource BorderColor}" BorderThickness="1.5" ItemsSource="{Binding DanhSachLoaiSPLoc}" DisplayMemberPath="TenLoai" SelectedValuePath="MaLoai" SelectedValue="{Binding MaLoaiLoc, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="0,0,15,0">
+                    <TextBlock Text="Tìm theo Tên hoặc Mã Sản Phẩm" FontSize="12" FontWeight="SemiBold" Foreground="{StaticResource TextMuted}" Margin="0,0,0,6"/>
+                    <TextBox Padding="10" BorderBrush="{StaticResource BorderColor}" BorderThickness="1.5" Text="{Binding TuKhoa, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+                <Button Command="{Binding SearchCommand}" Grid.Column="2" VerticalAlignment="Bottom" Background="{StaticResource PrimaryColor}" Foreground="White" FontWeight="Bold" Padding="30,12" BorderThickness="0" Cursor="Hand">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="TRA CỨU"/>
+                </Button>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="1" Background="{StaticResource BgSurface}" CornerRadius="12" BorderBrush="{StaticResource BorderColor}" BorderThickness="1">
+            <DataGrid ItemsSource="{Binding DanhSachSanPham}" AutoGenerateColumns="False" CanUserAddRows="False" Background="Transparent" BorderThickness="0" RowHeight="50">
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#F4F7FE"/>
+                        <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Padding" Value="15,10"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="MÃ SP" Binding="{Binding MaSP}" Width="1*"/>
+                    <DataGridTextColumn Header="TÊN SẢN PHẨM" Binding="{Binding TenSP}" Width="2*"/>
+                    <DataGridTextColumn Header="LOẠI" Binding="{Binding LoaiSanPham.TenLoai}" Width="1*"/>
+                    <DataGridTextColumn Header="SL TỒN KHO" Binding="{Binding SLTon}" Width="1*"/>
+                    <DataGridTextColumn Header="ĐƠN GIÁ" Binding="{Binding DonGia, StringFormat=\{0:N0\} đ}" Width="1.5*"/>
+                    <DataGridTextColumn Header="TÌNH TRẠNG" Binding="{Binding TinhTrang}" Width="1.5*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>

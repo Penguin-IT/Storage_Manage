@@ -1,0 +1,803 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|e:\\doansql\\doan\\sql_storage_manage\\src\\quanlykho\\quanlykho\\views\\doimatkhauview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\doimatkhauview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\doimatkhauviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\doimatkhauviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\baocaophantichviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\baocaophantichviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\themdanhmucview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\themdanhmucview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\tracuutonkhoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\tracuutonkhoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\trangchuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\trangchuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\dailyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\dailyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\trangchuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\trangchuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\inbaocaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\inbaocaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\dangnhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\dangnhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\baseviewmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\baseviewmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\quanlytaikhoanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\quanlytaikhoanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\quanlytaikhoanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\quanlytaikhoanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\nhacungcapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\nhacungcapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\themdanhmucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\themdanhmucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\tracuutonkhoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\tracuutonkhoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\thongkedoanhthuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\thongkedoanhthuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\timkiemchungtuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\timkiemchungtuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\themsanphamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\themsanphamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\dangnhapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\dangnhapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\taohoadonbanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\taohoadonbanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\baocaophantichview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\baocaophantichview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\trangchuview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\trangchuview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\TrangChuView.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyKho\\obj\\Debug\\Views\\TrangChuView.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\inbaocaoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\inbaocaoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\thongkedoanhthuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\thongkedoanhthuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\themsanphamview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\themsanphamview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\timkiemchungtuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\timkiemchungtuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\taohoadonnhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\taohoadonnhapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\viewmodels\\phieukiemkeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\viewmodels\\phieukiemkeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\phieukiemkeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\phieukiemkeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\taohoadonbanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\taohoadonbanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\taohoadonnhapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\taohoadonnhapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\qlkhomodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\qlkhomodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\dailyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\dailyview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\nhacungcapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\nhacungcapview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\nhacungcapview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\nhacungcapview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\NhaCungCapView.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyKho\\obj\\Debug\\Views\\NhaCungCapView.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\qlkhomodel.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\qlkhomodel.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\qlkhomodel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\qlkhomodel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\qlkhomodel.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\qlkhomodel.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\qlkhomodel.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\qlkhomodel.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\chitietkiemke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\chitietkiemke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\chitietpn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\chitietpn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\chitietpx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\chitietpx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\quanlykho\\models\\daily.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE013099-2020-4570-ABA1-3157DE15288A}|QuanLyKho\\QuanLyKho.csproj|solutionrelative:quanlykho\\models\\daily.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyKho\\obj\\Debug\\Views\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 270,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThemDanhMucView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\ThemDanhMucView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\ThemDanhMucView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\ThemDanhMucView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\ThemDanhMucView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T15:43:15.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoiMatKhauView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\DoiMatKhauView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\DoiMatKhauView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\DoiMatKhauView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\DoiMatKhauView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T15:40:43.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "QuanLyTaiKhoanView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\QuanLyTaiKhoanView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\QuanLyTaiKhoanView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\QuanLyTaiKhoanView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\QuanLyTaiKhoanView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T15:23:44.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DangNhapView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\DangNhapView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\DangNhapView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\DangNhapView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\DangNhapView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T15:23:28.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TrangChuView.xaml.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TrangChuView.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\TrangChuView.xaml.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TrangChuView.xaml.cs",
+              "RelativeToolTip": "QuanLyKho\\Views\\TrangChuView.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAMwBQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T15:17:03.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TrangChuView.g.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\TrangChuView.g.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\obj\\Debug\\Views\\TrangChuView.g.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\TrangChuView.g.cs",
+              "RelativeToolTip": "QuanLyKho\\obj\\Debug\\Views\\TrangChuView.g.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAMwDAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T15:16:53.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "InBaoCaoView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\InBaoCaoView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\InBaoCaoView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\InBaoCaoView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\InBaoCaoView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T14:58:32.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BaoCaoPhanTichView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\BaoCaoPhanTichView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\BaoCaoPhanTichView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\BaoCaoPhanTichView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\BaoCaoPhanTichView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T14:57:23.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrangChuView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TrangChuView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\TrangChuView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TrangChuView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\TrangChuView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T14:57:20.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PhieuKiemKeView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\PhieuKiemKeView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\PhieuKiemKeView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\PhieuKiemKeView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\PhieuKiemKeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T13:55:38.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TaoHoaDonNhapView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TaoHoaDonNhapView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\TaoHoaDonNhapView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TaoHoaDonNhapView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\TaoHoaDonNhapView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T13:55:20.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TaoHoaDonBanView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TaoHoaDonBanView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\TaoHoaDonBanView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TaoHoaDonBanView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\TaoHoaDonBanView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T13:55:03.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NhaCungCapView.g.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\NhaCungCapView.g.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\obj\\Debug\\Views\\NhaCungCapView.g.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\NhaCungCapView.g.cs",
+              "RelativeToolTip": "QuanLyKho\\obj\\Debug\\Views\\NhaCungCapView.g.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwCkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:24:41.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NhaCungCapView.xaml.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\NhaCungCapView.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\NhaCungCapView.xaml.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\NhaCungCapView.xaml.cs",
+              "RelativeToolTip": "QuanLyKho\\Views\\NhaCungCapView.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:24:21.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DaiLyView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\DaiLyView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\DaiLyView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\DaiLyView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\DaiLyView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T13:24:14.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "NhaCungCapView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\NhaCungCapView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\NhaCungCapView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\NhaCungCapView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\NhaCungCapView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T13:22:38.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\MainWindow.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T13:20:35.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ChiTietKiemKe.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\ChiTietKiemKe.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\ChiTietKiemKe.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\ChiTietKiemKe.cs",
+              "RelativeToolTip": "QuanLyKho\\Models\\ChiTietKiemKe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:15:24.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ChiTietPN.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\ChiTietPN.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\ChiTietPN.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\ChiTietPN.cs",
+              "RelativeToolTip": "QuanLyKho\\Models\\ChiTietPN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:15:23.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ChiTietPX.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\ChiTietPX.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\ChiTietPX.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\ChiTietPX.cs",
+              "RelativeToolTip": "QuanLyKho\\Models\\ChiTietPX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:15:23.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DaiLy.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\DaiLy.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\DaiLy.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\DaiLy.cs",
+              "RelativeToolTip": "QuanLyKho\\Models\\DaiLy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:15:17.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "QLKhoModel.edmx.diagram",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.edmx.diagram",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\QLKhoModel.edmx.diagram",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.edmx.diagram",
+              "RelativeToolTip": "QuanLyKho\\Models\\QLKhoModel.edmx.diagram",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-31T13:14:40.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "QLKhoModel.tt",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.tt",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\QLKhoModel.tt",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.tt",
+              "RelativeToolTip": "QuanLyKho\\Models\\QLKhoModel.tt",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-31T13:14:42.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "QLKhoModel.Designer.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.Designer.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\QLKhoModel.Designer.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.Designer.cs",
+              "RelativeToolTip": "QuanLyKho\\Models\\QLKhoModel.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:14:39.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "QLKhoModel.Context.tt",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.Context.tt",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\QLKhoModel.Context.tt",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.Context.tt",
+              "RelativeToolTip": "QuanLyKho\\Models\\QLKhoModel.Context.tt",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-31T13:14:31.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrangChuViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TrangChuViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\TrangChuViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TrangChuViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\TrangChuViewModel.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAqwC8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:14:17.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TraCuuTonKhoViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TraCuuTonKhoViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\TraCuuTonKhoViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TraCuuTonKhoViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\TraCuuTonKhoViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:53.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TimKiemChungTuViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TimKiemChungTuViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\TimKiemChungTuViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TimKiemChungTuViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\TimKiemChungTuViewModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAIA9wDkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:49.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ThongKeDoanhThuViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\ThongKeDoanhThuViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\ThongKeDoanhThuViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\ThongKeDoanhThuViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\ThongKeDoanhThuViewModel.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAD4vyYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:43.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ThemSanPhamViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\ThemSanPhamViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\ThemSanPhamViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\ThemSanPhamViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\ThemSanPhamViewModel.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAA0wAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:32.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ThemDanhMucViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\ThemDanhMucViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\ThemDanhMucViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\ThemDanhMucViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\ThemDanhMucViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:23.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TaoHoaDonNhapViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TaoHoaDonNhapViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\TaoHoaDonNhapViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TaoHoaDonNhapViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\TaoHoaDonNhapViewModel.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAhwMkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:14.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TaoHoaDonBanViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TaoHoaDonBanViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\TaoHoaDonBanViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\TaoHoaDonBanViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\TaoHoaDonBanViewModel.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAmwMwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:05.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\RelayCommand.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\RelayCommand.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:13:03.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PhieuKiemKeViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\PhieuKiemKeViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\PhieuKiemKeViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\PhieuKiemKeViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\PhieuKiemKeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:12:34.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NhaCungCapViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\NhaCungCapViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\NhaCungCapViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\NhaCungCapViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\NhaCungCapViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:12:42.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAlwCUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:12:32.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InBaoCaoViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\InBaoCaoViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\InBaoCaoViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\InBaoCaoViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\InBaoCaoViewModel.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAqwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:12:29.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoiMatKhauViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\DoiMatKhauViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\DoiMatKhauViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\DoiMatKhauViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\DoiMatKhauViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:12:22.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DangNhapViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\DangNhapViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\DangNhapViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\DangNhapViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\DangNhapViewModel.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwFAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:11:55.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DaiLyViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\DaiLyViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\DaiLyViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\DaiLyViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\DaiLyViewModel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwBcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:11:55.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseViewMode.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\BaseViewMode.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\BaseViewMode.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\BaseViewMode.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\BaseViewMode.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:11:47.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaoCaoPhanTichViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\BaoCaoPhanTichViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\BaoCaoPhanTichViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\BaoCaoPhanTichViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\BaoCaoPhanTichViewModel.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAYwDgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:11:37.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "QLKhoModel.edmx [Diagram1]",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.edmx",
+              "RelativeDocumentMoniker": "QuanLyKho\\Models\\QLKhoModel.edmx",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Models\\QLKhoModel.edmx [Diagram1]",
+              "RelativeToolTip": "QuanLyKho\\Models\\QLKhoModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-05-31T13:11:10.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TraCuuTonKhoView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TraCuuTonKhoView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\TraCuuTonKhoView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TraCuuTonKhoView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\TraCuuTonKhoView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T10:43:21.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TimKiemChungTuView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TimKiemChungTuView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\TimKiemChungTuView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\TimKiemChungTuView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\TimKiemChungTuView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T10:43:15.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ThongKeDoanhThuView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\ThongKeDoanhThuView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\ThongKeDoanhThuView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\ThongKeDoanhThuView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\ThongKeDoanhThuView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T10:43:13.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ThemSanPhamView.xaml",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\ThemSanPhamView.xaml",
+              "RelativeDocumentMoniker": "QuanLyKho\\Views\\ThemSanPhamView.xaml",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\Views\\ThemSanPhamView.xaml",
+              "RelativeToolTip": "QuanLyKho\\Views\\ThemSanPhamView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-31T10:43:09.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QuanLyTaiKhoanViewModel.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\QuanLyTaiKhoanViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\ViewModels\\QuanLyTaiKhoanViewModel.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\ViewModels\\QuanLyTaiKhoanViewModel.cs",
+              "RelativeToolTip": "QuanLyKho\\ViewModels\\QuanLyTaiKhoanViewModel.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswBUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T10:41:31.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "MainWindow.g.cs",
+              "DocumentMoniker": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\MainWindow.g.cs",
+              "RelativeDocumentMoniker": "QuanLyKho\\obj\\Debug\\Views\\MainWindow.g.cs",
+              "ToolTip": "E:\\DoAnSQL\\DoAn\\SQL_Storage_Manage\\src\\QuanLyKho\\QuanLyKho\\obj\\Debug\\Views\\MainWindow.g.cs",
+              "RelativeToolTip": "QuanLyKho\\obj\\Debug\\Views\\MainWindow.g.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAawDgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T12:10:02.25Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d6e99635a3c64c0b9124c135470e24ee" Name="Diagram1">
+        <EntityTypeShape EntityType="QL_KHOModel.ChiTietKiemKe" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.ChiTietPN" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.ChiTietPX" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.DaiLy" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.KhoHang" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.LoaiSanPham" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.NhaCungCap" Width="1.5" PointX="3.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.NhanVien" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.PhieuKiemKe" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.PhieuNhap" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.PhieuXuat" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.SanPham" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.TaiKhoan" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.vw_BaoCaoXuatNhapTon" Width="1.5" PointX="5.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.vw_ChiTietPhieuNhap" Width="1.5" PointX="7.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.vw_ChiTietPhieuXuat" Width="1.5" PointX="9.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.vw_NhaCungCapTheoSanPham" Width="1.5" PointX="9.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOModel.vw_ThongTinSanPham" Width="1.5" PointX="9.75" PointY="11" IsExpanded="true" />
+        <AssociationConnector Association="QL_KHOModel.FK_CTKK_PhieuKiemKe" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_CTKK_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_PhieuNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_SanPham_CTPN" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_PhieuXuat" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_SanPham_CTPX" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_DaiLy" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_LoaiSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_KiemKe_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_NhanVien_PN" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_NhanVien_PX" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOModel.FK_TaiKhoan_NhanVien" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
