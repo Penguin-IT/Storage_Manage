@@ -1,0 +1,49 @@
+﻿<Window x:Class="phamledangvuong.Sanpham"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:phamledangvuong"
+        mc:Ignorable="d"
+        Title="Sanpham" Height="550" Width="800">
+
+    <Grid Margin="20" Height="476">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="377*"/>
+            <ColumnDefinition Width="118*"/>
+            <ColumnDefinition Width="248*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock Text="Thông tin sản phẩm" FontSize="20" FontWeight="Bold"/>
+            <TextBlock Text="Tên sản phẩm" FontSize="15" Margin="0,10,0,0"/>
+            <TextBox Height="30"/>
+            <TextBlock Text="Giá" FontSize="15" Margin="0,10,0,0"/>
+            <TextBox Height="30"/>
+            <TextBlock Text="Số lượng" FontSize="15" Margin="0,10,0,0"/>
+            <TextBox Height="30"/>
+            <TextBlock Text="Danh mục" FontSize="15" Margin="0,10,0,0"/>
+            <ComboBox Height="30"/>
+            <TextBlock Text="Nhà cung cấp" FontSize="15" Margin="0,10,0,0"/>
+            <ComboBox Height="30"/>
+            <TextBlock Text="Ngày nhập" FontSize="15" Margin="0,10,0,0"/>
+            <DatePicker/>
+            <TextBlock Text="Mô tả" FontSize="15" Margin="0,10,0,0"/>
+            <TextBox Height="30" AcceptsReturn="True"/>
+            <CheckBox Content="Còn hàng" FontSize="15" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Margin="20,0,0,0">
+            <TextBlock Text="Hình ảnh" FontSize="16" FontWeight="Bold"/>
+            <Border BorderBrush="Gray" BorderThickness="1" Height="200" Margin="0,10,0,0">
+                <Image Stretch="Uniform"/>
+            </Border>
+            <Button Content="Chọn ảnh" Margin="0,10,0,0" Height="30"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,112,0,0" Grid.Column="2" Width="228">
+            <Button Content="Thêm" Width="100" Margin="5" Height="25"/>
+            <Button Content="Hủy" Width="100" Margin="5" Height="25"/>
+        </StackPanel>
+    </Grid>
+</Window>
